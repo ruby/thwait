@@ -25,6 +25,9 @@ require "e2mmap"
 #
 #
 class ThreadsWait
+
+  VERSION = "0.1.0"
+
   extend Exception2MessageMapper
   def_exception("ErrNoWaitingThread", "No threads for waiting.")
   def_exception("ErrNoFinishedThread", "No finished threads.")

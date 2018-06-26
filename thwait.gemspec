@@ -1,11 +1,8 @@
-
-lib = File.expand_path("../lib", __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "thwait/version"
+require_relative "lib/thwait"
 
 Gem::Specification.new do |spec|
   spec.name          = "thwait"
-  spec.version       = Thwait::VERSION
+  spec.version       = ThWait::VERSION
   spec.authors       = ["Keiju ISHITSUKA"]
   spec.email         = ["keiju@ruby-lang.org"]
 
