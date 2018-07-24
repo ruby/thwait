@@ -1,4 +1,4 @@
-require_relative "lib/thwait"
+require_relative "lib/thwait/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "thwait"
