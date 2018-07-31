@@ -2,7 +2,7 @@ require_relative "lib/thwait/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "thwait"
-  spec.version       = ThWait::VERSION
+  spec.version       = ThreadsWait::VERSION
   spec.authors       = ["Keiju ISHITSUKA"]
   spec.email         = ["keiju@ruby-lang.org"]
 
