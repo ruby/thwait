@@ -1,4 +1,8 @@
-require_relative "lib/thwait/version"
+begin
+  require_relative "lib/thwait/version"
+rescue LoadError
+  require_relative "version"
+end
 
 Gem::Specification.new do |spec|
   spec.name          = "thwait"
