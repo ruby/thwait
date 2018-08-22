@@ -1,8 +1,6 @@
-# Thwait
+# ThreadsWait
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/thwait`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This class watches for termination of multiple threads.  Basic functionality (wait until specified threads have terminated) can be accessed through the class method ThreadsWait::all_waits.  Finer control can be gained using instance methods.
 
 ## Installation
 
@@ -22,7 +20,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```
+  ThreadsWait.all_waits(thr1, thr2, ...) do |t|
+    STDERR.puts "Thread #{t} has terminated."
+  end
+
+  th = ThreadsWait.new(thread1,...)
+  th.next_wait # next one to be done
+```
 
 ## Development
 
