@@ -89,6 +89,7 @@ class ThreadsWait
     @threads.concat threads
     for th in threads
       Thread.start(th) do |t|
+        Thread.current.report_on_exception = false
         begin
           t.join
         ensure
